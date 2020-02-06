@@ -7,10 +7,12 @@ class MainController extends Controller {
         }
 
         this.load.view('index', data);
+        this.render();
     }
 
     _404() {
         this.load.view('404');
+        this.render();
     }
 }
 
